@@ -1,38 +1,120 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../src/img/bg2.jpg)
+}
+
+nav{
+  margin: 0;
+  height: 10vh;
+}
+
+nav .nav-links{
+  display: flex;
+  flex-direction: row;
+  background-image: url(../src/img/bg2.jpg);
+  margin: 0;
+  padding: 0 5rem;
+  height: 100%;
+  list-style: none;
+  
+}
+
+.nav-links li{
+  font-size: 2rem;
+  align-items: center;
+  
+
+}
+
+.nav-links .user{
+  margin: auto 0 auto auto;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+}
+
+
+main .welcome h1{
+  margin: .2rem;
+
+
+}
+
+.welcome h1.mortal{
+  font-size: 80px;
+  color: black;
+ 
+
+}
+
+.hades{
+  margin-left: auto;
+  margin-right:  auto;
+  display: block;
+  max-width: 100%;
+  max-height: auto;
+  width: 38%;
+}
+
+
+.title {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ .link {
+   color: yellow;
+   font-family: Arial, Helvetica, sans-serif;
+   margin: auto 1rem;
+   cursor: pointer;
+   z-index: 10;
+   text-decoration: none;
+ }
+
+
+.about {
+  text-align: center;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.power{
+  text-align: center; 
+  font-weight: bold;
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.welcome p.enter{
+  font-size: 30px;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
+
+
+@keyframes glow {
   from {
-    transform: rotate(0deg);
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
   }
   to {
-    transform: rotate(360deg);
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
 }
